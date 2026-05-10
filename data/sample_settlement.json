@@ -1,0 +1,28 @@
+{
+  "dataset_name": "revops_bookings_settlement",
+  "generated_at": "2026-05-10T10:05:00Z",
+  "allowed_freshness_minutes": 60,
+  "amount_tolerance": 500,
+  "source_records": [
+    { "record_id": "bk-001", "account_id": "acct-201", "amount": 125000, "status": "booked", "owner_email": "ae-1@kineticgain.com" },
+    { "record_id": "bk-002", "account_id": "acct-202", "amount": 84000, "status": "booked", "owner_email": "ae-2@kineticgain.com" },
+    { "record_id": "bk-003", "account_id": "acct-203", "amount": 211500, "status": "booked", "owner_email": "ae-3@kineticgain.com" },
+    { "record_id": "bk-004", "account_id": "acct-204", "amount": 96000, "status": "pending", "owner_email": "ae-4@kineticgain.com" },
+    { "record_id": "bk-005", "account_id": "acct-205", "amount": 340000, "status": "booked", "owner_email": "ae-5@kineticgain.com" },
+    { "record_id": "bk-006", "account_id": "acct-206", "amount": 57000, "status": "pending", "owner_email": "ae-6@kineticgain.com" },
+    { "record_id": "bk-007", "account_id": "acct-207", "amount": 188000, "status": "booked", "owner_email": "ae-7@kineticgain.com" },
+    { "record_id": "bk-008", "account_id": "acct-208", "amount": 45500, "status": "canceled", "owner_email": "ae-8@kineticgain.com" },
+    { "record_id": "bk-009", "account_id": "acct-209", "amount": 129500, "status": "booked", "owner_email": "ae-9@kineticgain.com" }
+  ],
+  "warehouse_records": [
+    { "record_id": "bk-001", "account_id": "acct-201", "amount": 125000, "status": "booked", "owner_email": "ae-1@kineticgain.com" },
+    { "record_id": "bk-002", "account_id": "acct-202", "amount": 84320, "status": "booked", "owner_email": "ae-2@kineticgain.com" },
+    { "record_id": "bk-003", "account_id": "acct-203", "amount": 213600, "status": "pending", "owner_email": "ae-3@kineticgain.com" },
+    { "record_id": "bk-004", "account_id": "acct-204", "amount": 96000, "status": "pending", "owner_email": "ae-4@kineticgain.com" },
+    { "record_id": "bk-005", "account_id": "acct-205", "amount": 340000, "status": "booked", "owner_email": "ae-5@kineticgain.com" },
+    { "record_id": "bk-006", "account_id": "acct-206", "amount": 57000, "status": "booked", "owner_email": "ae-6@kineticgain.com" },
+    { "record_id": "bk-007", "account_id": "acct-207", "amount": 188000, "status": "booked", "owner_email": "ae-7@kineticgain.com" },
+    { "record_id": "bk-010", "account_id": "acct-210", "amount": 72000, "status": "booked", "owner_email": "ae-10@kineticgain.com" },
+    { "record_id": "bk-011", "account_id": "acct-211", "amount": 54000, "status": "pending", "owner_email": "ae-11@kineticgain.com" }
+  ]
+}

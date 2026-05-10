@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Warehouse Reconciliation Engine Hero</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #101015;
+      --panel: #181920;
+      --panel-2: #232530;
+      --border: #3d4254;
+      --text: #f2ede5;
+      --muted: #b9bdc9;
+      --accent: #9fd3ff;
+      --accent-2: #ffcf98;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      width: 1600px;
+      height: 900px;
+      overflow: hidden;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background:
+        radial-gradient(circle at top left, #2a1f33, transparent 32%),
+        linear-gradient(180deg, #101015, #0b0c10 78%);
+      color: var(--text);
+    }
+    .frame {
+      width: 1520px;
+      height: 820px;
+      margin: 40px;
+      padding: 42px 46px;
+      border-radius: 34px;
+      border: 1px solid #2d3140;
+      background: rgba(24, 25, 32, 0.96);
+    }
+    .eyebrow {
+      color: var(--accent);
+      font-size: 18px;
+      letter-spacing: .34em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 24px 0 14px;
+      max-width: 1180px;
+      font: 700 60px/1.03 Georgia, "Times New Roman", serif;
+    }
+    .lead {
+      margin: 0;
+      max-width: 1140px;
+      color: var(--muted);
+      font-size: 26px;
+      line-height: 1.38;
+    }
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+      margin-top: 30px;
+    }
+    .metric {
+      height: 164px;
+      padding: 22px 24px;
+      border-radius: 24px;
+      border: 1px solid var(--border);
+      background: var(--panel-2);
+    }
+    .metric-label {
+      color: #dbe8f4;
+      font-size: 14px;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+    .metric-value {
+      margin-top: 24px;
+      font: 700 58px/1 Georgia, "Times New Roman", serif;
+    }
+    .metric-copy {
+      margin-top: 10px;
+      color: #d8dde7;
+      font-size: 18px;
+      line-height: 1.28;
+    }
+    .lane {
+      margin-top: 22px;
+      padding: 26px 30px;
+      border-radius: 28px;
+      border: 1px solid #42506a;
+      background: #1b202b;
+    }
+    .section-label {
+      color: var(--accent-2);
+      font-size: 14px;
+      letter-spacing: .28em;
+      text-transform: uppercase;
+    }
+    .lane h2 {
+      margin: 14px 0 12px;
+      max-width: 1180px;
+      font: 700 42px/1.08 Georgia, "Times New Roman", serif;
+    }
+    .lane p {
+      margin: 0;
+      max-width: 1160px;
+      color: var(--muted);
+      font-size: 22px;
+      line-height: 1.36;
+    }
+  </style>
+</head>
+<body>
+  <div class="frame">
+    <div class="eyebrow">Warehouse Reconciliation Engine</div>
+    <h1>Catch source-to-warehouse drift before finance, revenue, and growth teams trust the wrong snapshot.</h1>
+    <p class="lead">A Python backend for settlement reconciliation, row parity checks, amount tolerance review, status drift detection, and freshness validation across warehouse loads.</p>
+    <section class="metrics">
+      <div class="metric">
+        <div class="metric-label">Source Rows</div>
+        <div class="metric-value">9</div>
+        <div class="metric-copy">Records in the source-of-truth export</div>
+      </div>
+      <div class="metric">
+        <div class="metric-label">Warehouse Rows</div>
+        <div class="metric-value">9</div>
+        <div class="metric-copy">Rows persisted in the warehouse snapshot</div>
+      </div>
+      <div class="metric">
+        <div class="metric-label">Issue Families</div>
+        <div class="metric-value">5</div>
+        <div class="metric-copy">Distinct reconciliation lanes triggered</div>
+      </div>
+      <div class="metric">
+        <div class="metric-label">Overall Score</div>
+        <div class="metric-value">91</div>
+        <div class="metric-copy">Critical warehouse trust regression</div>
+      </div>
+    </section>
+    <section class="lane">
+      <div class="section-label">Current Reconciliation Lane</div>
+      <h2>Freshness lag, missing rows, extra rows, and state drift are all touching the same booking settlement set.</h2>
+      <p>The engine is designed to explain whether the warehouse can be trusted yet, not just whether counts happen to line up.</p>
+    </section>
+  </div>
+</body>
+</html>
